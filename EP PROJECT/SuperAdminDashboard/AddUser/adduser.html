@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="adduser.css">
+    <link rel="stylesheet" href="../sadmindashboard.css">
+    <title>Add User</title>
+  </head>
+  <body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                    <span class="title">Admin DashBoard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <span class="title">Add User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="title">View Faculty</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="school-outline"></ion-icon></ion-icon></span>
+                    <span class="title">View HOD</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="arrow-redo-outline"></ion-icon></span>
+                    <span class="title">Resignation Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="trending-up-outline"></ion-icon></span>
+                    <span class="title">Other Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="toggle"></div> -->
+    </div>
+    <div class="adduser">
+      <div class="adduserform">
+        <center>
+          <div class="adduserhead"><h1>Add User</h1></div>
+        </center>
+        <form method="POST" action="registered">
+          <div class="inputbox">
+            <input type="text" name="first_name" value="" required />
+            <span>First Name</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="text" name="last_name" value="" required />
+            <span>Last Name</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="date" name="dob" id="" required />
+            <span>Date of Birth</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <select>
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <span></span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="text" name="last_name" value="" required />
+            <span>Address</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input
+              type="number"
+              name="phone"
+              placeholder="+91-*******"
+              required
+            />
+            <span>Mobile Number</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="email" name="email" value="" required />
+            <span>Email Address</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <select>
+                <option value="">Role</option>
+                <option value="Faculty">Faculty</option>
+                <option value="HOD">HOD</option>
+                <option value="Admin">Admin</option>
+            </select>
+            <span></span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <select>
+                <option value="">Designation</option>
+                <option value="Professor">Professor</option>
+                <option value="Associate_professor">Associate Professor</option>
+                <option value="Assistant_professor">Assistant Professor</option>
+            </select>
+            <span></span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <select>
+                <option value="">Department</option>
+                <option value="CSE">CSE</option>
+                <option value="CSIT">CS & IT</option>
+                <option value="AIDS">AI & DS</option>
+                <option value="CE">CIVIL ENGINEERING</option>
+            </select>
+            <span></span>
+            <i></i>
+          </div>
+        
+          <br>
+          <br>
+         <div class="buttons">
+            <button type="reset" class="clear" >Reset</button>
+            <button type="submit" class="submit" >Submit</button>
+         </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

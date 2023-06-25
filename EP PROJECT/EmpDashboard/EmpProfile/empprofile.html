@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="empprofile.css">
+    <link rel="stylesheet" href="../empdashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EMPLOYEE PROFILE</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                    <span class="title">Employee DashBoard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="clipboard-outline"></ion-icon></span>
+                    <span class="title">Tasks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                    <span class="title">Accomplished Task</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <span class="title">Profile</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="title">Settings</span>
+                </a>
+            </li> -->
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="toggle"></div> -->
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="card">
+        <div class="user">
+            <div class="imgBx">
+                <img src="../EmpProfile/Images/male.jpg">
+            </div>
+            <div class="content">
+                <h2>Employee <br><span>Associate Professor</span></h2>
+            </div>
+            <span class="toggle"></span>
+        </div>
+        <ul class="contact">
+            <li style="--clr: #c71610; --i:0;"><a href="#"><div class="iconBx"><i class="fa-solid fa-envelope"></i></div><p>employee@gmail.com</p></a></li>
+            <li style="--clr: #171515; --i:1;"><a href="#"><div class="iconBx"><i class="fa-brands fa-github"></i></div><p>employee@gmail.com</p></a></li>
+            <li style="--clr: #0a66c2; --i:1;"><a href="#"><div class="iconBx"><i class="fa-brands fa-linkedin"></i></div><p>employee@gmail.com</p></a></li>
+        </ul>
+    </div>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let card = document.querySelector('.card');
+        toggle.onclick = function(){
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
