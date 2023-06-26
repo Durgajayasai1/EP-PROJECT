@@ -156,7 +156,7 @@
         text-align:left;
     }
     .column6{
-        width:200px;
+        width:180px;
         text-align:left;
         padding-right:32px;
     }
@@ -176,7 +176,7 @@
     i:hover{
         color: blue;
     }
-    .hoddetails{
+    .facultydetails{
         color: white;
         /* text-align: center; */
         font-weight: 100;
